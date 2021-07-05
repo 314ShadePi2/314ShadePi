@@ -20,8 +20,8 @@ Main::Main(const char* _name)
 int Main::fMain()
 {
     std::cout << "Hello World!";
-    std::cin.get();
+    WAITUSR;
     std::cout << std::endl << "Instance Name Is: " << m_Name;
-    std::cin.get();
+    WAITUSR;
     return 0;
 }

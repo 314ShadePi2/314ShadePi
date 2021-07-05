@@ -1,7 +1,6 @@
 #pragma once
 #include "dataManipulation.h"
-
-int main();
+#include "Macros.h"
 
 class Main
 {

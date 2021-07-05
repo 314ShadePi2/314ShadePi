@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "314ShadePi", "314ShadePi\314ShadePi.vcxproj", "{BB6A743C-583F-48AC-ABAA-5570B06A77F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD} = {99CC1FDB-E28A-44D8-AE45-6F5C689039AD}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dataManipulation", "dataManipulation\dataManipulation.vcxproj", "{D40446C6-2A00-4C8A-89F5-B5C2EB261C35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD} = {99CC1FDB-E28A-44D8-AE45-6F5C689039AD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "314stdMacros", "314stdMacros\314stdMacros.vcxproj", "{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +39,14 @@ Global
 		{D40446C6-2A00-4C8A-89F5-B5C2EB261C35}.Release|x64.Build.0 = Release|x64
 		{D40446C6-2A00-4C8A-89F5-B5C2EB261C35}.Release|x86.ActiveCfg = Release|Win32
 		{D40446C6-2A00-4C8A-89F5-B5C2EB261C35}.Release|x86.Build.0 = Release|Win32
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Debug|x64.ActiveCfg = Debug|x64
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Debug|x64.Build.0 = Debug|x64
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Debug|x86.Build.0 = Debug|Win32
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Release|x64.ActiveCfg = Release|x64
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Release|x64.Build.0 = Release|x64
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Release|x86.ActiveCfg = Release|Win32
+		{99CC1FDB-E28A-44D8-AE45-6F5C689039AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
