@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{99cc1fdb-e28a-44d8-ae45-6f5c689039ad}</ProjectGuid>
-    <RootNamespace>My314stdMacros</RootNamespace>
+    <ProjectGuid>{5d181a0f-e7f6-413e-a587-f9a9a8329cd7}</ProjectGuid>
+    <RootNamespace>SPstdMacros</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -160,17 +160,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\framework.h" />
-    <ClInclude Include="src\Macros.h" />
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\SPstdMacros.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\314stdMacros.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\SPstdMacros.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

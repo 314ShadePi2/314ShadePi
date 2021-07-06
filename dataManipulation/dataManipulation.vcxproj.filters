@@ -21,12 +21,12 @@
     <ClInclude Include="src\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\dataManipulation.h">
+    <ClInclude Include="src\SPdataManipulation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\dataManipulation.cpp">
+    <ClCompile Include="src\SPdataManipulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\pch.cpp">

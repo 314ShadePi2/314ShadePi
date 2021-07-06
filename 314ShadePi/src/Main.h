@@ -1,13 +1,14 @@
 #pragma once
-#include "dataManipulation.h"
-#include "Macros.h"
+#include "SPdataManipulation.h"
+#include "SPstdMacros.h"
 
+template<typename T>
 class Main
 {
 private:
-	const char* m_Name;
+	T m_Name;
 public:
-	Main(const char*);
+	Main(T);
 
-	int fMain();
+	int fMain(const char*);
 };

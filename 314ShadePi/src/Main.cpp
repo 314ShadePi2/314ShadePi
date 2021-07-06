@@ -3,25 +3,29 @@
 
 int main()
 {
-    fndataManipulation();
     {
-        Main Program = Main("Program");
-        Program.fMain();
+        Main<const char*> Program = Main<const char*>("Program");
+        Program.fMain("Main Program Started");
     }
     return 0;
 }
 
-Main::Main(const char* _name)
+template<typename T>
+Main<T>::Main(T _name)
     : m_Name(_name)
 {
-
+    initSPstdMacros("314ShadePi");
+    std::cout << std::endl;
+    initSPDataManipulation("314ShadePi");
+    std::cout << std::endl;
 }
 
-int Main::fMain()
+template<typename T>
+int Main<T>::fMain(const char* _message)
 {
-    std::cout << "Hello World!";
-    WAITUSR;
+    std::cout << _message;
+    std::cin.get();
     std::cout << std::endl << "Instance Name Is: " << m_Name;
-    WAITUSR;
+    std::cin.get();
     return 0;
 }
